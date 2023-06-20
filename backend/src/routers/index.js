@@ -4,6 +4,14 @@ const router = express.Router();
 const stripeController = require("../controllers/stripeController.js");
 const { upload } = require("../config/helper.js");
 
+
+
+
+
+
+
+
+
 router.get('/createDriverAccount', stripeController.createDriverAccount);
 router.post('/createPaymentIntent', stripeController.createPaymentIntents);
 router.post('/acceptPayment', stripeController.acceptPayment);
